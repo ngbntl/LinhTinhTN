@@ -1,0 +1,107 @@
+{
+  "home": {
+    "title": "Home"
+  },
+  "login": {
+    "login": "Login",
+    "username": "Username",
+    "password": "Password",
+    "forgot-password": "Forgot password?",
+    "click-here": "Click here!",
+    "sign-in": "Login",
+    "submitting": "Signing in...",
+    "success": "Login successful!",
+    "failed": "Login failed. Please try again.",
+    "register": "Register",
+    "register-text": "Don't have an account?"
+  },
+  "register": {
+    "register": "Register",
+    "username": "Username",
+    "email": "Email",
+    "phone": "Phone",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "sign-up": "Register",
+    "submitting": "Submitting...",
+    "have-account": "Already have an account?",
+    "login": "Login",
+    "success": "Registration successful!",
+    "failed": "Registration failed!"
+  },
+  "validation": {
+    "username": {
+      "min": "Username must be at least 3 characters long",
+      "max": "Username must not exceed 50 characters",
+      "regex": "Username can only contain letters, numbers, and underscores"
+    },
+    "password": {
+      "min": "Password must be at least 3 characters long",
+      "max": "Password must not exceed 50 characters",
+      "regex": "Password must contain at least 1 lowercase letter, 1 uppercase letter, and 1 number",
+      "match": "Password does not match"
+    },
+    "required": "Required",
+    "invalid-email": "Invalid email address",
+    "invalid-phone": "Invalid phone number"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "footer": {
+    "links": "Links",
+    "contact": "Contact",
+    "description": "Learn right, take flight",
+    "copyright": "Copyright © 2025 JFIX. All rights reserved.",
+    "email": "Email",
+    "phone": "Phone",
+    "university": "Danang University of Science and Technology",
+    "address": "64 Nguyen Luong Bang, Danang, Vietnam"
+  },
+  "common": {
+    "logout": "Logout",
+    "login": "Login"
+  },
+  "header": {
+    "language": "Language",
+    "languages": {
+      "en": "English",
+      "jp": "Japanese",
+      "vi": "Vietnamese"
+    },
+    "guestUser": "Guest User",
+    "guestEmail": "guest@example.com",
+    "profile": "Profile",
+    "settings": "Settings",
+    "logout": "Log out",
+    "login": "Login",
+    "logout.success": "Logout successful!",
+    "logout.failed": "Logout failed. Please try again.",
+    "notifications": "Notifications"
+  },
+  "not-found": {
+    "title": "Page Not Found",
+    "description": "Sorry, the page you are looking for does not exist or has been removed.",
+    "button": "Back to Home"
+  },
+  "sidebar": {
+    "description": "Learn right, take flight",
+    "dashboard": "Dashboard",
+    "profile": "Profile",
+    "settings": "Settings",
+    "logout": "Logout",
+    "practice": "Practice",
+    "tasks": "Tasks",
+    "progress": "Progress",
+    "language": "Language",
+    "checkUpdate": "Check Update",
+    "study": "Study",
+    "lessonManagement": "Lesson Management",
+    "userManagement": "User Management",
+    "adminSettings": "Admin Settings",
+    "notifications": "Notifications",
+    "home": "Home"
+  }
+}

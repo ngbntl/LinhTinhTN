@@ -1,0 +1,107 @@
+{
+  "home": {
+    "title": "ホーム"
+  },
+  "login": {
+    "login": "ログイン",
+    "username": "ユーザー名",
+    "password": "パスワード",
+    "forgot-password": "パスワードをお忘れですか？",
+    "click-here": "ここをクリック！",
+    "sign-in": "ログイン",
+    "submitting": "ログイン中...",
+    "success": "ログイン成功！",
+    "failed": "ログインに失敗しました。もう一度お試しください。",
+    "register": "新規登録",
+    "register-text": "新規登録はこちら"
+  },
+  "register": {
+    "register": "新規登録",
+    "username": "ユーザー名",
+    "email": "メールアドレス",
+    "phone": "電話番号",
+    "password": "パスワード",
+    "confirmPassword": "パスワード確認",
+    "sign-up": "新規登録",
+    "submitting": "新規登録中...",
+    "have-account": "アカウントをお持ちですか？",
+    "login": "ログイン",
+    "success": "新規登録成功！",
+    "failed": "新規登録に失敗しました。もう一度お試しください。"
+  },
+  "validation": {
+    "username": {
+      "min": "ユーザー名は3文字以上である必要があります",
+      "max": "ユーザー名は50文字以下である必要があります",
+      "regex": "ユーザー名は英字、数字、アンダースコアのみ使用できます"
+    },
+    "password": {
+      "min": "パスワードは3文字以上である必要があります",
+      "max": "パスワードは50文字以下である必要があります",
+      "regex": "パスワードは小文字、大文字、数字をそれぞれ1文字以上含める必要があります",
+      "match": "パスワードが一致しません"
+    },
+    "required": "必須",
+    "invalid-email": "無効なメールアドレス",
+    "invalid-phone": "無効な電話番号"
+  },
+  "nav": {
+    "home": "ホーム",
+    "about": "JFIXについて",
+    "contact": "お問い合わせ"
+  },
+  "footer": {
+    "links": "リンク",
+    "contact": "お問い合わせ",
+    "description": "正しく学び、高く伸び",
+    "copyright": "© 2025 JFIX. 全著作権所有",
+    "email": "メール",
+    "phone": "電話番号",
+    "university": "ダナン工科大学",
+    "address": "64 Nguyen Luong Bang, Danang, Vietnam"
+  },
+  "common": {
+    "logout": "ログアウト",
+    "login": "ログイン"
+  },
+  "header": {
+    "language": "言語",
+    "languages": {
+      "en": "英語",
+      "jp": "日本語",
+      "vi": "ベトナム語"
+    },
+    "guestUser": "ゲストユーザー",
+    "guestEmail": "guest@example.com",
+    "profile": "プロフィール",
+    "settings": "設定",
+    "logout": "ログアウト",
+    "login": "ログイン",
+    "logout.success": "ログアウト成功",
+    "logout.failed": "ログアウトに失敗しました。もう一度お試しください。",
+    "notifications": "通知"
+  },
+  "not-found": {
+    "title": "ページが見つかりません",
+    "description": "申し訳ありませんが、お探しのページは存在しないか、削除されています。",
+    "button": "ホームに戻る"
+  },
+  "sidebar": {
+    "description": "正しく学び、高く伸び",
+    "dashboard": "ダッシュボード",
+    "profile": "プロフィール",
+    "settings": "設定",
+    "logout": "ログアウト",
+    "practice": "練習",
+    "tasks": "タスク",
+    "progress": "進捗状況",
+    "language": "言語",
+    "checkUpdate": "更新を確認",
+    "study": "学習",
+    "lessonManagement": "レッスン管理",
+    "userManagement": "ユーザー管理",
+    "adminSettings": "管理設定",
+    "notifications": "通知",
+    "home": "ホーム"
+  }
+}

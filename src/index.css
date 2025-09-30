@@ -1,0 +1,384 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Font Face Declarations */
+@font-face {
+  font-family: "Inter";
+  src: url("/app/fonts/Inter/Inter-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/app/fonts/Inter/Inter-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/app/fonts/Inter/Inter-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/app/fonts/Inter/Inter-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* M PLUS Rounded Font */
+@font-face {
+  font-family: "M PLUS Rounded 1c";
+  src: url("/app/fonts/M_PLUS_Rounded_1c/MPLUSRounded1c-Regular.ttf")
+    format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "M PLUS Rounded 1c";
+  src: url("/app/fonts/M_PLUS_Rounded_1c/MPLUSRounded1c-Medium.ttf")
+    format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "M PLUS Rounded 1c";
+  src: url("/app/fonts/M_PLUS_Rounded_1c/MPLUSRounded1c-Bold.ttf")
+    format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "M PLUS Rounded 1c";
+  src: url("/app/fonts/M_PLUS_Rounded_1c/MPLUSRounded1c-Black.ttf")
+    format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Hiragino Kaku Gothic Pro Font */
+@font-face {
+  font-family: "Hiragino Kaku Gothic ProN";
+  src: url("/app/fonts/Hiragino Kaku Gothic ProN W3/Hiragino Kaku Gothic ProN W3.otf")
+    format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Ryumin Pro Font */
+@font-face {
+  font-family: "A-OTF Ryumin Pro";
+  src: url("/app/fonts/A-OTF Ryumin Pro/A-OTF Ryumin Pro M-KL.otf")
+    format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Shin Go Pro Font */
+@font-face {
+  font-family: "A-OTF Shin Go Pro";
+  src: url("/app/fonts/a-otf-shin-go-pro/AOTFShinGoProLight.otf")
+    format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Trajan Pro Font */
+@font-face {
+  font-family: "Trajan Pro";
+  src: url("/app/fonts/OpenType-PS/TrajanPro3Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer base {
+  :root {
+    --background: 0, 0%, 96%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 240 10% 3.9%;
+    --radius: 0.5rem;
+    --header-height: 62px;
+
+    --primary: 234, 73%, 59%;
+    --primary-light: 231, 71%, 72%;
+    --secondary: 51, 60%, 39%;
+    --secondary-light: 51, 60%, 52%;
+    --gray: 0, 0%, 82%;
+    --background: 0, 0%, 91%;
+
+    --text-error: 348, 79%, 56%;
+
+    --notify-success-bg: 140, 38%, 86%;
+    --notify-success-text: 140, 58%, 20%;
+    --notify-info-bg: 200, 33%, 93%;
+    --notify-info-text: 200, 100%, 27%;
+    --notify-warn-bg: 48, 88%, 96%;
+    --notify-warn-text: 45, 95%, 27%;
+    --notify-error-bg: 0, 100%, 94%;
+    --notify-error-text: 348, 63%, 28%;
+  }
+
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 240 9% 83%;
+    --primary-foreground: 240 5.9% 10%;
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 240 10% 3.9%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
+
+@layer base {
+  * {
+    font-family: "Inter", sans-serif;
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+html,
+body {
+  font-family: "Inter", sans-serif;
+  @apply text-base leading-relaxed;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  font-family: "Inter", sans-serif;
+  @apply font-bold;
+}
+
+a {
+  font-family: "Inter", sans-serif;
+}
+
+p {
+  font-family: "Inter", sans-serif;
+  margin-top: 0;
+}
+
+body h1 {
+  font-size: 60px;
+  line-height: 78px;
+  font-weight: 400;
+}
+
+body h2 {
+  font-size: 36px;
+  line-height: 46px;
+  font-weight: 400;
+}
+
+body h3 {
+  font-size: 30px;
+  line-height: 39px;
+  font-weight: 400;
+}
+
+body h4 {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 505;
+}
+
+body h5 {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 505;
+}
+
+body h6 {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 505;
+}
+
+body p {
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400;
+}
+
+a {
+  font-weight: 400;
+  opacity: 1;
+  text-decoration: none;
+}
+
+a:hover {
+  font-family: "Inter";
+  font-weight: 400;
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+@media (max-width: 1280px) {
+  .container {
+    max-width: calc(100% - 80px);
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 100%;
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 30px;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+.custom-checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #cacaca;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.1s ease;
+}
+
+.custom-checkbox:checked {
+  border-color: #3d8fef;
+}
+
+.custom-checkbox:checked::before {
+  content: "✓";
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #3d8fef;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+@layer utilities {
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+
+  .transform-style-preserve-3d {
+    transform-style: preserve-3d;
+  }
+
+  .backface-hidden {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  .rotate-y-180 {
+    transform: rotateY(180deg);
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "home": {
+    "title": "Trang chủ"
+  },
+  "login": {
+    "login": "Đăng nhập",
+    "username": "Tên đăng nhập",
+    "password": "Mật khẩu",
+    "forgot-password": "Quên mật khẩu?",
+    "click-here": "Bấm vào đây!",
+    "sign-in": "Đăng nhập",
+    "submitting": "Đang đăng nhập...",
+    "success": "Đăng nhập thành công!",
+    "failed": "Đăng nhập thất bại. Vui lòng thử lại.",
+    "register": "Đăng ký",
+    "register-text": "Bạn chưa có tài khoản?"
+  },
+  "register": {
+    "register": "Đăng ký",
+    "username": "Tên đăng nhập",
+    "email": "Email",
+    "phone": "Số điện thoại",
+    "password": "Mật khẩu",
+    "confirmPassword": "Xác nhận mật khẩu",
+    "sign-up": "Đăng ký",
+    "submitting": "Đang đăng ký...",
+    "have-account": "Bạn đã có tài khoản?",
+    "login": "Đăng nhập",
+    "success": "Đăng ký thành công!",
+    "failed": "Đăng ký thất bại!"
+  },
+  "validation": {
+    "username": {
+      "min": "Tên đăng nhập phải có ít nhất 3 ký tự",
+      "max": "Tên đăng nhập không được vượt quá 50 ký tự",
+      "regex": "Tên đăng nhập chỉ được chứa chữ cái, số và dấu gạch dưới"
+    },
+    "password": {
+      "min": "Mật khẩu phải có ít nhất 3 ký tự",
+      "max": "Mật khẩu không được vượt quá 50 ký tự",
+      "regex": "Mật khẩu phải chứa ít nhất 1 chữ thường, 1 chữ hoa và 1 số",
+      "match": "Mật khẩu không khớp"
+    },
+    "required": "Bắt buộc",
+    "invalid-email": "Email không hợp lệ",
+    "invalid-phone": "Số điện thoại không hợp lệ"
+  },
+  "nav": {
+    "home": "Trang chủ",
+    "about": "Giới thiệu",
+    "contact": "Liên hệ"
+  },
+  "footer": {
+    "description": "Học đúng, tiến xa",
+    "links": "Liên kết",
+    "contact": "Liên hệ",
+    "copyright": "Bản quyền © 2025 JFIX. Tất cả các quyền được bảo lưu.",
+    "email": "Email",
+    "phone": "Số điện thoại",
+    "university": "Đại học Bách khoa Đà Nẵng",
+    "address": "64 Nguyễn Lương Bằng, Đà Nẵng, Việt Nam"
+  },
+  "common": {
+    "logout": "Đăng xuất",
+    "login": "Đăng nhập"
+  },
+  "header": {
+    "language": "Ngôn ngữ",
+    "languages": {
+      "en": "Tiếng Anh",
+      "jp": "Tiếng Nhật",
+      "vi": "Tiếng Việt"
+    },
+    "guestUser": "Khách",
+    "guestEmail": "guest@example.com",
+    "profile": "Hồ sơ",
+    "settings": "Cài đặt",
+    "logout": "Đăng xuất",
+    "login": "Đăng nhập",
+    "logout.success": "Đăng xuất thành công!",
+    "logout.failed": "Đăng xuất thất bại. Vui lòng thử lại.",
+    "notifications": "Thông báo"
+  },
+  "not-found": {
+    "title": "Trang không tồn tại",
+    "description": "Xin lỗi, trang bạn đang tìm kiếm không tồn tại hoặc đã bị xóa.",
+    "button": "Quay về trang chủ"
+  },
+  "sidebar": {
+    "description": "J-Fixer",
+    "dashboard": "Bảng điều khiển",
+    "profile": "Hồ sơ",
+    "settings": "Cài đặt",
+    "logout": "Đăng xuất",
+    "practice": "Luyện tập",
+    "tasks": "Nhiệm vụ",
+    "progress": "Theo dõi tiến độ",
+    "language": "Ngôn ngữ",
+    "checkUpdate": "Kiểm tra cập nhật",
+    "study": "Học tập",
+    "lessonManagement": "Quản lý bài học",
+    "userManagement": "Quản lý người dùng",
+    "adminSettings": "Cài đặt quản trị",
+    "notifications": "Thông báo",
+    "home": "Trang chủ"
+  }
+}

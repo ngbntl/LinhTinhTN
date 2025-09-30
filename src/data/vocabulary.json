@@ -1,0 +1,152 @@
+{
+  "day1": {
+    "title": "Gia đình và Người thân",
+    "words": [
+      {
+        "id": 1,
+        "word": "family",
+        "pronunciation": "/ˈfæm.əl.i/",
+        "meaning": "gia đình",
+        "type": "noun",
+        "example": "My family is very close.",
+        "translation": "Gia đình tôi rất gắn bó."
+      },
+      {
+        "id": 2,
+        "word": "mother",
+        "pronunciation": "/ˈmʌð.ər/",
+        "meaning": "mẹ",
+        "type": "noun",
+        "example": "My mother cooks delicious food.",
+        "translation": "Mẹ tôi nấu ăn rất ngon."
+      },
+      {
+        "id": 3,
+        "word": "father",
+        "pronunciation": "/ˈfɑː.ðər/",
+        "meaning": "cha, bố",
+        "type": "noun",
+        "example": "My father works in an office.",
+        "translation": "Bố tôi làm việc trong văn phòng."
+      },
+      {
+        "id": 4,
+        "word": "brother",
+        "pronunciation": "/ˈbrʌð.ər/",
+        "meaning": "anh trai, em trai",
+        "type": "noun",
+        "example": "My brother plays football.",
+        "translation": "Anh trai tôi chơi bóng đá."
+      },
+      {
+        "id": 5,
+        "word": "sister",
+        "pronunciation": "/ˈsɪs.tər/",
+        "meaning": "chị gái, em gái",
+        "type": "noun",
+        "example": "My sister loves reading books.",
+        "translation": "Em gái tôi thích đọc sách."
+      }
+    ]
+  },
+  "day2": {
+    "title": "Màu sắc",
+    "words": [
+      {
+        "id": 6,
+        "word": "red",
+        "pronunciation": "/red/",
+        "meaning": "đỏ",
+        "type": "adjective",
+        "example": "The apple is red.",
+        "translation": "Quả táo màu đỏ."
+      },
+      {
+        "id": 7,
+        "word": "blue",
+        "pronunciation": "/bluː/",
+        "meaning": "xanh dương",
+        "type": "adjective",
+        "example": "The sky is blue.",
+        "translation": "Bầu trời màu xanh."
+      },
+      {
+        "id": 8,
+        "word": "green",
+        "pronunciation": "/ɡriːn/",
+        "meaning": "xanh lá",
+        "type": "adjective",
+        "example": "The grass is green.",
+        "translation": "Cỏ màu xanh lá."
+      },
+      {
+        "id": 9,
+        "word": "yellow",
+        "pronunciation": "/ˈjel.oʊ/",
+        "meaning": "vàng",
+        "type": "adjective",
+        "example": "The sun is yellow.",
+        "translation": "Mặt trời màu vàng."
+      },
+      {
+        "id": 10,
+        "word": "black",
+        "pronunciation": "/blæk/",
+        "meaning": "đen",
+        "type": "adjective",
+        "example": "The cat is black.",
+        "translation": "Con mèo màu đen."
+      }
+    ]
+  },
+  "day3": {
+    "title": "Số đếm cơ bản",
+    "words": [
+      {
+        "id": 11,
+        "word": "one",
+        "pronunciation": "/wʌn/",
+        "meaning": "một",
+        "type": "number",
+        "example": "I have one book.",
+        "translation": "Tôi có một cuốn sách."
+      },
+      {
+        "id": 12,
+        "word": "two",
+        "pronunciation": "/tuː/",
+        "meaning": "hai",
+        "type": "number",
+        "example": "There are two cats.",
+        "translation": "Có hai con mèo."
+      },
+      {
+        "id": 13,
+        "word": "three",
+        "pronunciation": "/θriː/",
+        "meaning": "ba",
+        "type": "number",
+        "example": "I see three birds.",
+        "translation": "Tôi thấy ba con chim."
+      },
+      {
+        "id": 14,
+        "word": "four",
+        "pronunciation": "/fɔːr/",
+        "meaning": "bốn",
+        "type": "number",
+        "example": "The table has four legs.",
+        "translation": "Cái bàn có bốn chân."
+      },
+      {
+        "id": 15,
+        "word": "five",
+        "pronunciation": "/faɪv/",
+        "meaning": "năm",
+        "type": "number",
+        "example": "I have five fingers.",
+        "translation": "Tôi có năm ngón tay."
+      }
+    ]
+  }
+}
