@@ -44,11 +44,11 @@ export const Flashcard = ({
     difficulty?: "easy" | "medium" | "hard"
   ) => {
     markWordKnown(word.id, known, difficulty);
-    // Auto flip to next card after marking
+    // Reset to front side first, then move to next card
+    setIsFlipped(false);
     setTimeout(() => {
-      setIsFlipped(false);
       onNext?.();
-    }, 500);
+    }, 300); // Reduced timeout for better UX
   };
 
   const playPronunciation = () => {
@@ -192,8 +192,8 @@ export const Flashcard = ({
         </div>
       </div>
 
-      {/* Action buttons - only show when flipped */}
-      {showActions && isFlipped && (
+      {/* Action buttons - show always when showActions is true */}
+      {showActions && (
         <div className="flex flex-wrap justify-center gap-3 mb-4">
           <Button
             onClick={(e) => {
@@ -201,6 +201,7 @@ export const Flashcard = ({
               handleMarkKnown(true, "easy");
             }}
             className="bg-green-600 hover:bg-green-700 text-white flex items-center gap-2"
+            disabled={!isFlipped}
           >
             <Check className="w-4 h-4" />
             Dễ (7 ngày)
@@ -212,6 +213,7 @@ export const Flashcard = ({
               handleMarkKnown(true, "medium");
             }}
             className="bg-blue-600 hover:bg-blue-700 text-white flex items-center gap-2"
+            disabled={!isFlipped}
           >
             <Check className="w-4 h-4" />
             Bình thường (3 ngày)
@@ -223,6 +225,7 @@ export const Flashcard = ({
               handleMarkKnown(true, "hard");
             }}
             className="bg-orange-600 hover:bg-orange-700 text-white flex items-center gap-2"
+            disabled={!isFlipped}
           >
             <Check className="w-4 h-4" />
             Khó (1 ngày)
@@ -235,6 +238,7 @@ export const Flashcard = ({
               handleMarkKnown(false);
             }}
             className="text-red-600 border-red-200 hover:bg-red-50 flex items-center gap-2"
+            disabled={!isFlipped}
           >
             <X className="w-4 h-4" />
             Chưa thuộc
