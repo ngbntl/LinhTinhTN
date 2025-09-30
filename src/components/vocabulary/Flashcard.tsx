@@ -201,7 +201,6 @@ export const Flashcard = ({
               handleMarkKnown(true, "easy");
             }}
             className="bg-green-600 hover:bg-green-700 text-white flex items-center gap-2"
-            disabled={!isFlipped}
           >
             <Check className="w-4 h-4" />
             Dễ (7 ngày)
@@ -213,7 +212,6 @@ export const Flashcard = ({
               handleMarkKnown(true, "medium");
             }}
             className="bg-blue-600 hover:bg-blue-700 text-white flex items-center gap-2"
-            disabled={!isFlipped}
           >
             <Check className="w-4 h-4" />
             Bình thường (3 ngày)
@@ -225,7 +223,6 @@ export const Flashcard = ({
               handleMarkKnown(true, "hard");
             }}
             className="bg-orange-600 hover:bg-orange-700 text-white flex items-center gap-2"
-            disabled={!isFlipped}
           >
             <Check className="w-4 h-4" />
             Khó (1 ngày)
@@ -238,7 +235,6 @@ export const Flashcard = ({
               handleMarkKnown(false);
             }}
             className="text-red-600 border-red-200 hover:bg-red-50 flex items-center gap-2"
-            disabled={!isFlipped}
           >
             <X className="w-4 h-4" />
             Chưa thuộc
