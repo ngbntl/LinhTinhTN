@@ -13,17 +13,31 @@ export const useVocabulary = () => {
 
       try {
         // Đọc file Excel từ public folder
-        const vocabularyData = await ExcelReader.readVocabularyFromPath(
+        const rawVocabularyData = await ExcelReader.readVocabularyFromPath(
           "/data.xlsx"
         );
 
-        // Validate dữ liệu
+        // Phân tích và loại bỏ từ trùng lặp
+        const duplicateAnalysis =
+          ExcelReader.analyzeDuplicates(rawVocabularyData);
+        console.log("Duplicate analysis:", duplicateAnalysis);
+
+        // Loại bỏ từ trùng lặp
+        const vocabularyData =
+          ExcelReader.removeDuplicateWords(rawVocabularyData);
+
+        // Validate dữ liệu sau khi đã loại bỏ trùng lặp
         const validation = ExcelReader.validateData(vocabularyData);
         if (!validation.isValid) {
           console.warn("Data validation warnings:", validation.errors);
         }
 
-        console.log("Vocabulary stats:", validation.stats);
+        console.log(
+          "Vocabulary stats after removing duplicates:",
+          validation.stats
+        );
+        console.log(`Removed ${duplicateAnalysis.duplicates} duplicate words`);
+
         setData(vocabularyData);
       } catch (err) {
         console.error("Error loading vocabulary data:", err);
@@ -165,15 +179,24 @@ export const useVocabulary = () => {
     setError(null);
 
     try {
-      const newData = await ExcelReader.readVocabularyFile(file);
-      const validation = ExcelReader.validateData(newData);
+      const rawData = await ExcelReader.readVocabularyFile(file);
+
+      // Phân tích và loại bỏ từ trùng lặp từ file mới
+      const duplicateAnalysis = ExcelReader.analyzeDuplicates(rawData);
+      console.log("Duplicate analysis for uploaded file:", duplicateAnalysis);
+
+      const cleanData = ExcelReader.removeDuplicateWords(rawData);
+      const validation = ExcelReader.validateData(cleanData);
 
       if (!validation.isValid) {
         throw new Error(`Invalid data: ${validation.errors.join(", ")}`);
       }
 
-      setData(newData);
+      setData(cleanData);
       console.log("New vocabulary uploaded:", validation.stats);
+      console.log(
+        `Removed ${duplicateAnalysis.duplicates} duplicate words from uploaded file`
+      );
     } catch (err) {
       console.error("Error uploading file:", err);
       setError(err instanceof Error ? err.message : "Failed to upload file");

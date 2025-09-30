@@ -13,6 +13,7 @@ import { DayView } from "@/pages/vocabulary/DayView";
 import { Review } from "@/pages/vocabulary/Review";
 import { Quiz } from "@/pages/vocabulary/Quiz";
 import { QuizSetup } from "@/pages/vocabulary/QuizSetup";
+import { DebugExcel } from "@/components/vocabulary/DebugExcel";
 
 const PrivateRoute = ({ children }: { children: React.ReactNode }) => {
   // const { user } = useUserStore();
@@ -45,6 +46,7 @@ const Router = () => {
         <Route path="/vocabulary/quiz" element={<Quiz />} />
         <Route path="/vocabulary/quiz-setup" element={<QuizSetup />} />
         <Route path="/vocabulary/quiz/:day" element={<VocabularyHome />} />
+        <Route path="/vocabulary/debug" element={<DebugExcel />} />
       </Route>
 
       {/* Auth routes */}
